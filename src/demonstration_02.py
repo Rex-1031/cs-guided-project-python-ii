@@ -16,5 +16,19 @@ Notes:
 
 
 def add_indexes(numbers):
-    # Your code here
+    # Start a new list
+    solution = list()
+
+    return [num+i for (i,num) in enumerate(numbers)]
+
+    # This also works:
+
+    # # Loop through the original numbers list, addding a version to the new list with each index added to the number
+    # for (i,num) in enumerate(numbers):
+    #     solution.append(i+num)
+
+    # return solution
+
+print(add_indexes([1, 2, 3, 4, 5]))
+print(add_indexes([5, 4, 3, 2, 1]))
 

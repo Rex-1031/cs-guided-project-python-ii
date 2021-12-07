@@ -15,5 +15,24 @@ Notes:
 
 
 def multiply_nums(nums):
-    # Your code here
+    code = nums.replace(', ', '*') # turns 2, 3 into 2*3
+    return eval(code) # evaluate a string as Python code
+
+print(multiply_nums("1, 2, 3, 4"))
+
+
+
+# Alternate solutions:
+def alt_multiply_nums(nums):
+    # initalize the product
+    product = 1
+
+    # Separate the nums string out into a list of numbers
+    numberList = nums.split(', ')
+
+    # multiply those numbers together
+    for i in numberList:
+        product *= int(i)
+
+    return product
 

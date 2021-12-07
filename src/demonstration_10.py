@@ -16,6 +16,15 @@ Notes:
 the maximum number is first.
 """
 def max_and_min(input_str):
-    # Your code here
+    # split the string into a list of integers\
+    integers = [int(num) for num in input_str.split(' ')]
+
+    # find the min and max
+    listMin = min(integers)
+    listMax = max(integers)
+
+    # return them as f'{max} {min}'
+    return f'{listMax} {listMin}'
+
 
 
