@@ -10,6 +10,9 @@ Examples:
 - parity(2) -> "Even"
 """
 def parity(input_int):
-    # Your code here
+    return "Even" if (input_int % 2 == 0) else "Odd"
+
+    # Could also do:
+    # return "Odd" if input_int % 2 else "Even"
 
 

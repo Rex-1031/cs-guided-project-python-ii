@@ -24,5 +24,13 @@ Notes:
 
 
 def emotify(txt):
-    # Your code here
+    # Use string replace for each emoticon
+    return txt.replace('smile', ':D').replace('grin', ':)').replace('sad', ':(').replace('mad', ':P')
+
+    # alternate solutions:
+    # create a dictionary, separate the string to a word list and reconstruct it with the emoticons by using the dictionary to look up the last word
+
+    # create a dictionary and do the chaining above but with a for loop (helpful for a more involved replacement scheme)
+
+    # ... many other ways
 
